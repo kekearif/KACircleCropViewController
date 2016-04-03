@@ -9,5 +9,5 @@ The app uses test data for 7 days of water drinking. It doesn’t actually save 
 
 Optimised for iOS8+, iPhone5 - iphone6S+
 
-<img src="https://github.com/kekearif/KACircleCropViewController/blob/master/screenshot.jpg?raw=true" alt="Circle Crop View Controller" align="left">
+<img src="https://github.com/kekearif/KACircleCropViewController/blob/master/Circle%20Crop%20View%20Controller%20Demo/screenshot.jpg?raw=true" alt="Circle Crop View Controller" align="left">
 
