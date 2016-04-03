@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A86A19171CB1AEBC00FDCA8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86A19161CB1AEBC00FDCA8D /* AppDelegate.swift */; };
+		A86A19191CB1AEBC00FDCA8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86A19181CB1AEBC00FDCA8D /* ViewController.swift */; };
+		A86A191C1CB1AEBC00FDCA8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A86A191A1CB1AEBC00FDCA8D /* Main.storyboard */; };
+		A86A191E1CB1AEBC00FDCA8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A86A191D1CB1AEBC00FDCA8D /* Assets.xcassets */; };
+		A86A19211CB1AEBC00FDCA8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A86A191F1CB1AEBC00FDCA8D /* LaunchScreen.storyboard */; };
+		A86A192C1CB1AEBD00FDCA8D /* Circle_Crop_View_Controller_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86A192B1CB1AEBD00FDCA8D /* Circle_Crop_View_Controller_DemoTests.swift */; };
+		A86A19371CB1AEBD00FDCA8D /* Circle_Crop_View_Controller_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86A19361CB1AEBD00FDCA8D /* Circle_Crop_View_Controller_DemoUITests.swift */; };
+		A86A19471CB1AF3200FDCA8D /* KACircleCropCutterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86A19441CB1AF3200FDCA8D /* KACircleCropCutterView.swift */; };
+		A86A19481CB1AF3200FDCA8D /* KACircleCropScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86A19451CB1AF3200FDCA8D /* KACircleCropScrollView.swift */; };
+		A86A19491CB1AF3200FDCA8D /* KACircleCropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86A19461CB1AF3200FDCA8D /* KACircleCropViewController.swift */; };
+		A86A194B1CB1AFB700FDCA8D /* cloud.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A86A194A1CB1AFB700FDCA8D /* cloud.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A86A19281CB1AEBD00FDCA8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A86A190B1CB1AEBC00FDCA8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A86A19121CB1AEBC00FDCA8D;
+			remoteInfo = "Circle Crop View Controller Demo";
+		};
+		A86A19331CB1AEBD00FDCA8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A86A190B1CB1AEBC00FDCA8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A86A19121CB1AEBC00FDCA8D;
+			remoteInfo = "Circle Crop View Controller Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A86A19131CB1AEBC00FDCA8D /* Circle Crop View Controller Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Circle Crop View Controller Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A86A19161CB1AEBC00FDCA8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A86A19181CB1AEBC00FDCA8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A86A191B1CB1AEBC00FDCA8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A86A191D1CB1AEBC00FDCA8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A86A19201CB1AEBC00FDCA8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A86A19221CB1AEBD00FDCA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A86A19271CB1AEBD00FDCA8D /* Circle Crop View Controller DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Circle Crop View Controller DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A86A192B1CB1AEBD00FDCA8D /* Circle_Crop_View_Controller_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle_Crop_View_Controller_DemoTests.swift; sourceTree = "<group>"; };
+		A86A192D1CB1AEBD00FDCA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A86A19321CB1AEBD00FDCA8D /* Circle Crop View Controller DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Circle Crop View Controller DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A86A19361CB1AEBD00FDCA8D /* Circle_Crop_View_Controller_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle_Crop_View_Controller_DemoUITests.swift; sourceTree = "<group>"; };
+		A86A19381CB1AEBD00FDCA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A86A19441CB1AF3200FDCA8D /* KACircleCropCutterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KACircleCropCutterView.swift; sourceTree = "<group>"; };
+		A86A19451CB1AF3200FDCA8D /* KACircleCropScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KACircleCropScrollView.swift; sourceTree = "<group>"; };
+		A86A19461CB1AF3200FDCA8D /* KACircleCropViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KACircleCropViewController.swift; sourceTree = "<group>"; };
+		A86A194A1CB1AFB700FDCA8D /* cloud.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cloud.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A86A19101CB1AEBC00FDCA8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A86A19241CB1AEBD00FDCA8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A86A192F1CB1AEBD00FDCA8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A86A190A1CB1AEBC00FDCA8D = {
+			isa = PBXGroup;
+			children = (
+				A86A19151CB1AEBC00FDCA8D /* Circle Crop View Controller Demo */,
+				A86A192A1CB1AEBD00FDCA8D /* Circle Crop View Controller DemoTests */,
+				A86A19351CB1AEBD00FDCA8D /* Circle Crop View Controller DemoUITests */,
+				A86A19141CB1AEBC00FDCA8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A86A19141CB1AEBC00FDCA8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A86A19131CB1AEBC00FDCA8D /* Circle Crop View Controller Demo.app */,
+				A86A19271CB1AEBD00FDCA8D /* Circle Crop View Controller DemoTests.xctest */,
+				A86A19321CB1AEBD00FDCA8D /* Circle Crop View Controller DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A86A19151CB1AEBC00FDCA8D /* Circle Crop View Controller Demo */ = {
+			isa = PBXGroup;
+			children = (
+				A86A19461CB1AF3200FDCA8D /* KACircleCropViewController.swift */,
+				A86A19451CB1AF3200FDCA8D /* KACircleCropScrollView.swift */,
+				A86A19441CB1AF3200FDCA8D /* KACircleCropCutterView.swift */,
+				A86A19161CB1AEBC00FDCA8D /* AppDelegate.swift */,
+				A86A19181CB1AEBC00FDCA8D /* ViewController.swift */,
+				A86A191A1CB1AEBC00FDCA8D /* Main.storyboard */,
+				A86A191F1CB1AEBC00FDCA8D /* LaunchScreen.storyboard */,
+				A86A19221CB1AEBD00FDCA8D /* Info.plist */,
+				A86A194A1CB1AFB700FDCA8D /* cloud.jpg */,
+				A86A191D1CB1AEBC00FDCA8D /* Assets.xcassets */,
+			);
+			path = "Circle Crop View Controller Demo";
+			sourceTree = "<group>";
+		};
+		A86A192A1CB1AEBD00FDCA8D /* Circle Crop View Controller DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A86A192B1CB1AEBD00FDCA8D /* Circle_Crop_View_Controller_DemoTests.swift */,
+				A86A192D1CB1AEBD00FDCA8D /* Info.plist */,
+			);
+			path = "Circle Crop View Controller DemoTests";
+			sourceTree = "<group>";
+		};
+		A86A19351CB1AEBD00FDCA8D /* Circle Crop View Controller DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A86A19361CB1AEBD00FDCA8D /* Circle_Crop_View_Controller_DemoUITests.swift */,
+				A86A19381CB1AEBD00FDCA8D /* Info.plist */,
+			);
+			path = "Circle Crop View Controller DemoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A86A19121CB1AEBC00FDCA8D /* Circle Crop View Controller Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A86A193B1CB1AEBD00FDCA8D /* Build configuration list for PBXNativeTarget "Circle Crop View Controller Demo" */;
+			buildPhases = (
+				A86A190F1CB1AEBC00FDCA8D /* Sources */,
+				A86A19101CB1AEBC00FDCA8D /* Frameworks */,
+				A86A19111CB1AEBC00FDCA8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Circle Crop View Controller Demo";
+			productName = "Circle Crop View Controller Demo";
+			productReference = A86A19131CB1AEBC00FDCA8D /* Circle Crop View Controller Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A86A19261CB1AEBD00FDCA8D /* Circle Crop View Controller DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A86A193E1CB1AEBD00FDCA8D /* Build configuration list for PBXNativeTarget "Circle Crop View Controller DemoTests" */;
+			buildPhases = (
+				A86A19231CB1AEBD00FDCA8D /* Sources */,
+				A86A19241CB1AEBD00FDCA8D /* Frameworks */,
+				A86A19251CB1AEBD00FDCA8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A86A19291CB1AEBD00FDCA8D /* PBXTargetDependency */,
+			);
+			name = "Circle Crop View Controller DemoTests";
+			productName = "Circle Crop View Controller DemoTests";
+			productReference = A86A19271CB1AEBD00FDCA8D /* Circle Crop View Controller DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A86A19311CB1AEBD00FDCA8D /* Circle Crop View Controller DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A86A19411CB1AEBD00FDCA8D /* Build configuration list for PBXNativeTarget "Circle Crop View Controller DemoUITests" */;
+			buildPhases = (
+				A86A192E1CB1AEBD00FDCA8D /* Sources */,
+				A86A192F1CB1AEBD00FDCA8D /* Frameworks */,
+				A86A19301CB1AEBD00FDCA8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A86A19341CB1AEBD00FDCA8D /* PBXTargetDependency */,
+			);
+			name = "Circle Crop View Controller DemoUITests";
+			productName = "Circle Crop View Controller DemoUITests";
+			productReference = A86A19321CB1AEBD00FDCA8D /* Circle Crop View Controller DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A86A190B1CB1AEBC00FDCA8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Keke Arif";
+				TargetAttributes = {
+					A86A19121CB1AEBC00FDCA8D = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					A86A19261CB1AEBD00FDCA8D = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = A86A19121CB1AEBC00FDCA8D;
+					};
+					A86A19311CB1AEBD00FDCA8D = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = A86A19121CB1AEBC00FDCA8D;
+					};
+				};
+			};
+			buildConfigurationList = A86A190E1CB1AEBC00FDCA8D /* Build configuration list for PBXProject "Circle Crop View Controller Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A86A190A1CB1AEBC00FDCA8D;
+			productRefGroup = A86A19141CB1AEBC00FDCA8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A86A19121CB1AEBC00FDCA8D /* Circle Crop View Controller Demo */,
+				A86A19261CB1AEBD00FDCA8D /* Circle Crop View Controller DemoTests */,
+				A86A19311CB1AEBD00FDCA8D /* Circle Crop View Controller DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A86A19111CB1AEBC00FDCA8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A86A19211CB1AEBC00FDCA8D /* LaunchScreen.storyboard in Resources */,
+				A86A191E1CB1AEBC00FDCA8D /* Assets.xcassets in Resources */,
+				A86A191C1CB1AEBC00FDCA8D /* Main.storyboard in Resources */,
+				A86A194B1CB1AFB700FDCA8D /* cloud.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A86A19251CB1AEBD00FDCA8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A86A19301CB1AEBD00FDCA8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A86A190F1CB1AEBC00FDCA8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A86A19191CB1AEBC00FDCA8D /* ViewController.swift in Sources */,
+				A86A19171CB1AEBC00FDCA8D /* AppDelegate.swift in Sources */,
+				A86A19471CB1AF3200FDCA8D /* KACircleCropCutterView.swift in Sources */,
+				A86A19491CB1AF3200FDCA8D /* KACircleCropViewController.swift in Sources */,
+				A86A19481CB1AF3200FDCA8D /* KACircleCropScrollView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A86A19231CB1AEBD00FDCA8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A86A192C1CB1AEBD00FDCA8D /* Circle_Crop_View_Controller_DemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A86A192E1CB1AEBD00FDCA8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A86A19371CB1AEBD00FDCA8D /* Circle_Crop_View_Controller_DemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A86A19291CB1AEBD00FDCA8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A86A19121CB1AEBC00FDCA8D /* Circle Crop View Controller Demo */;
+			targetProxy = A86A19281CB1AEBD00FDCA8D /* PBXContainerItemProxy */;
+		};
+		A86A19341CB1AEBD00FDCA8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A86A19121CB1AEBC00FDCA8D /* Circle Crop View Controller Demo */;
+			targetProxy = A86A19331CB1AEBD00FDCA8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A86A191A1CB1AEBC00FDCA8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A86A191B1CB1AEBC00FDCA8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A86A191F1CB1AEBC00FDCA8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A86A19201CB1AEBC00FDCA8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A86A19391CB1AEBD00FDCA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A86A193A1CB1AEBD00FDCA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A86A193C1CB1AEBD00FDCA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Circle Crop View Controller Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kexgithub.Circle-Crop-View-Controller-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A86A193D1CB1AEBD00FDCA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Circle Crop View Controller Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kexgithub.Circle-Crop-View-Controller-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A86A193F1CB1AEBD00FDCA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Circle Crop View Controller DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kexgithub.Circle-Crop-View-Controller-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Circle Crop View Controller Demo.app/Circle Crop View Controller Demo";
+			};
+			name = Debug;
+		};
+		A86A19401CB1AEBD00FDCA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Circle Crop View Controller DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kexgithub.Circle-Crop-View-Controller-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Circle Crop View Controller Demo.app/Circle Crop View Controller Demo";
+			};
+			name = Release;
+		};
+		A86A19421CB1AEBD00FDCA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Circle Crop View Controller DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kexgithub.Circle-Crop-View-Controller-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Circle Crop View Controller Demo";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A86A19431CB1AEBD00FDCA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Circle Crop View Controller DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kexgithub.Circle-Crop-View-Controller-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Circle Crop View Controller Demo";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A86A190E1CB1AEBC00FDCA8D /* Build configuration list for PBXProject "Circle Crop View Controller Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A86A19391CB1AEBD00FDCA8D /* Debug */,
+				A86A193A1CB1AEBD00FDCA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A86A193B1CB1AEBD00FDCA8D /* Build configuration list for PBXNativeTarget "Circle Crop View Controller Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A86A193C1CB1AEBD00FDCA8D /* Debug */,
+				A86A193D1CB1AEBD00FDCA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A86A193E1CB1AEBD00FDCA8D /* Build configuration list for PBXNativeTarget "Circle Crop View Controller DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A86A193F1CB1AEBD00FDCA8D /* Debug */,
+				A86A19401CB1AEBD00FDCA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A86A19411CB1AEBD00FDCA8D /* Build configuration list for PBXNativeTarget "Circle Crop View Controller DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A86A19421CB1AEBD00FDCA8D /* Debug */,
+				A86A19431CB1AEBD00FDCA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A86A190B1CB1AEBC00FDCA8D /* Project object */;
+}
