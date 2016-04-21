@@ -23,7 +23,7 @@ func circleCropDidCropImage(image: UIImage) {
      dismissViewControllerAnimated(false, completion: nil)
     }
 ```
-A demo project can be found in this repository.
+A demo project can be found in this repository :smiley:.
 
 
 
