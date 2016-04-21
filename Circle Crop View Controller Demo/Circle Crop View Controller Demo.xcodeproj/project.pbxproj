@@ -502,6 +502,7 @@
 				A86A193D1CB1AEBD00FDCA8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A86A193E1CB1AEBD00FDCA8D /* Build configuration list for PBXNativeTarget "Circle Crop View Controller DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +511,7 @@
 				A86A19401CB1AEBD00FDCA8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A86A19411CB1AEBD00FDCA8D /* Build configuration list for PBXNativeTarget "Circle Crop View Controller DemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +520,7 @@
 				A86A19431CB1AEBD00FDCA8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
