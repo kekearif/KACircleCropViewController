@@ -1,5 +1,8 @@
 # KACircleCropViewController
-An extremely simple circular crop view controller created in Swift.
+An extremely simple circular crop view controller created in Swift, similar in style to the crop controller that Line uses.
+
+# Usage
+dsadsadsda
 
 Code converted from Swift to Objective-C. Hopefully others who work in Objective-C will find it useful.
 
