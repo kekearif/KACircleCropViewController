@@ -29,7 +29,7 @@ A demo project can be found in the repository :smiley:
 Swift 2.1.1
 
 #License
-KACircleCropViewController is licensed under the MIT License, please see the [LICENSE](../blob/master/LICENSE.md) file.
+KACircleCropViewController is licensed under the MIT License, please see the [LICENSE](/blob/master/LICENSE.md) file.
 
 
 
