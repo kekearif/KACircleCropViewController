@@ -28,6 +28,9 @@ A demo project can be found in the repository :smiley:
 #Requirements
 Swift 2.1.1
 
+#License
+some text
+
 
 
 
