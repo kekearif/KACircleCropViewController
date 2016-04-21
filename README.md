@@ -1,6 +1,5 @@
 # KACircleCropViewController
 An extremely simple circular crop view controller created in Swift, similar in style to the crop controller that Line uses.
-Optimised for iOS8+, iPhone5 - iphone6S+
 
 # Usage
 <img src="https://github.com/kekearif/KACircleCropViewController/blob/master/Circle%20Crop%20View%20Controller%20Demo/screenshot.png?raw=true" alt="Circle Crop View Controller" align="right">
@@ -23,13 +22,13 @@ func circleCropDidCropImage(image: UIImage) {
      dismissViewControllerAnimated(false, completion: nil)
     }
 ```
-A demo project can be found in the repository :smiley:
+A demo project can be found in the repository.
 
 #Requirements
 Swift 2.1.1
 
 #License
-KACircleCropViewController is licensed under the MIT License, please see the [LICENSE](LICENSE.md) file.
+KACircleCropViewController is licensed under the MIT License, please see the [LICENSE](LICENSE.md) file. Pull requests and contributions always welcome :smiley:
 
 
 
