@@ -3,7 +3,7 @@ An extremely simple circular crop view controller created in Swift, similar in s
 Optimised for iOS8+, iPhone5 - iphone6S+
 
 # Usage
-'''swift
+'''Swift
 print("hello")
 '''
 
