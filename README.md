@@ -4,7 +4,7 @@ Optimised for iOS8+, iPhone5 - iphone6S+
 
 # Usage
 
-Initialize the view controller, pass in the image to be cropped and then present.
+Simple drag the files *KACircleCropViewController*, *KACircleCropScrollView* and *KACircleCropCutterView* into your project. Initialize the view controller, pass in the image to be cropped and then present.
 ```Swift
 let circleCropController = KACircleCropViewController(withImage: UIImage(named: "cloud.jpg")!)
 circleCropController.delegate = self
