@@ -86,12 +86,12 @@ class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         okButton.setTitle("OK", forState: .Normal)
         okButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         okButton.titleLabel?.font = backButton.titleLabel?.font.fontWithSize(17)
-        okButton.addTarget(self, action: "didTapOk", forControlEvents: .TouchUpInside)
+        okButton.addTarget(self, action: #selector(didTapOk), forControlEvents: .TouchUpInside)
         
         backButton.setTitle("<", forState: .Normal)
         backButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
         backButton.titleLabel?.font = backButton.titleLabel?.font.fontWithSize(30)
-        backButton.addTarget(self, action: "didTapBack", forControlEvents: .TouchUpInside)
+        backButton.addTarget(self, action: #selector(didTapBack), forControlEvents: .TouchUpInside)
         
         setLabelAndButtonFrames()
         
