@@ -9,7 +9,7 @@ let circleCropController = KACircleCropViewController(withImage: UIImage(named: 
 circleCropController.delegate = self
 presentViewController(circleCropController, animated: false, completion: nil)
 ```
-Make the presenting view controller conform to the KACircleCropViewControllerDelegate protocol and implement it's methods.
+Make the presenting view controller conform to the KACircleCropViewControllerDelegate protocol and implement its methods.
 ```Swift
  func circleCropDidCancel() {
         //Basic dismiss
