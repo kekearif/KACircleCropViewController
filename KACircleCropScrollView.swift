@@ -27,12 +27,12 @@ class KACircleCropScrollView: UIScrollView {
     }
 
     //Allow dragging outside of the scroll view bounds
-    override func hitTest(point: CGPoint, withEvent event: UIEvent?) -> UIView? {
+    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
         
-        let excessWidth = (UIScreen.mainScreen().bounds.size.width - self.bounds.size.width)/2
-        let excessHeight = (UIScreen.mainScreen().bounds.size.height - self.bounds.size.height)/2
+        let excessWidth = (UIScreen.main.bounds.size.width - self.bounds.size.width)/2
+        let excessHeight = (UIScreen.main.bounds.size.height - self.bounds.size.height)/2
         
-        if CGRectContainsPoint(CGRectInset(self.bounds, -excessWidth, -excessHeight), point) {
+        if self.bounds.insetBy(dx: -excessWidth, dy: -excessHeight).contains(point) {
             return self
         }
         

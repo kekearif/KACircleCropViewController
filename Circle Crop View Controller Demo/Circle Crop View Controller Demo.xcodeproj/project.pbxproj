@@ -205,13 +205,16 @@
 				TargetAttributes = {
 					A86A19121CB1AEBC00FDCA8D = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0810;
 					};
 					A86A19261CB1AEBD00FDCA8D = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = A86A19121CB1AEBC00FDCA8D;
 					};
 					A86A19311CB1AEBD00FDCA8D = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = A86A19121CB1AEBC00FDCA8D;
 					};
 				};
@@ -418,6 +421,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kexgithub.Circle-Crop-View-Controller-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -431,6 +435,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kexgithub.Circle-Crop-View-Controller-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -443,6 +448,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kexgithub.Circle-Crop-View-Controller-DemoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Circle Crop View Controller Demo.app/Circle Crop View Controller Demo";
 			};
 			name = Debug;
@@ -455,6 +461,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kexgithub.Circle-Crop-View-Controller-DemoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Circle Crop View Controller Demo.app/Circle Crop View Controller Demo";
 			};
 			name = Release;
@@ -466,6 +473,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kexgithub.Circle-Crop-View-Controller-DemoUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Circle Crop View Controller Demo";
 				USES_XCTRUNNER = YES;
 			};
@@ -478,6 +486,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kexgithub.Circle-Crop-View-Controller-DemoUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Circle Crop View Controller Demo";
 				USES_XCTRUNNER = YES;
 			};

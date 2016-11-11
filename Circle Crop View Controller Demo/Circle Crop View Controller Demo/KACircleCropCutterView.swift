@@ -20,15 +20,15 @@ class KACircleCropCutterView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.opaque = false
+        self.isOpaque = false
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.opaque = false
+        self.isOpaque = false
     }
 
-    override func drawRect(rect: CGRect) {
+    override func draw(_ rect: CGRect) {
         
         let context = UIGraphicsGetCurrentContext()
         
@@ -36,24 +36,24 @@ class KACircleCropCutterView: UIView {
         UIRectFill(rect)
         
         //This is the same rect as the UIScrollView size 240 * 240, remains centered
-        let circle = UIBezierPath(ovalInRect: CGRect(x: rect.size.width/2 - 240/2, y: rect.size.height/2 - 240/2, width: 240, height: 240))
-        CGContextSetBlendMode(context, .Clear)
-        UIColor.clearColor().setFill()
+        let circle = UIBezierPath(ovalIn: CGRect(x: rect.size.width/2 - 240/2, y: rect.size.height/2 - 240/2, width: 240, height: 240))
+        context?.setBlendMode(.clear)
+        UIColor.clear.setFill()
         circle.fill()
         
         //This is the same rect as the UIScrollView size 240 * 240, remains centered
         let square = UIBezierPath(rect: CGRect(x: rect.size.width/2 - 240/2, y: rect.size.height/2 - 240/2, width: 240, height: 240))
-        UIColor.lightGrayColor().setStroke()
+        UIColor.lightGray.setStroke()
         square.lineWidth = 1.0
-        CGContextSetBlendMode(context, .Normal)
+        context?.setBlendMode(.normal)
         square.stroke()
         
     }
     
     //Allow touches through the circle crop cutter view
-    override func pointInside(point: CGPoint, withEvent event: UIEvent?) -> Bool {
+    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
         for subview in subviews as [UIView] {
-            if !subview.hidden && subview.alpha > 0 && subview.userInteractionEnabled && subview.pointInside(convertPoint(point, toView: subview), withEvent: event) {
+            if !subview.isHidden && subview.alpha > 0 && subview.isUserInteractionEnabled && subview.point(inside: convert(point, to: subview), with: event) {
                 return true
             }
         }

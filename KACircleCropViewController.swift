@@ -12,7 +12,7 @@ protocol KACircleCropViewControllerDelegate
 {
     
     func circleCropDidCancel()
-    func circleCropDidCropImage(image: UIImage)
+    func circleCropDidCropImage(_ image: UIImage)
     
 }
 
@@ -50,11 +50,11 @@ class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.blackColor()
-        scrollView.backgroundColor = UIColor.blackColor()
+        view.backgroundColor = UIColor.black
+        scrollView.backgroundColor = UIColor.black
         
         imageView.image = image
-        imageView.frame = CGRect(origin: CGPointZero, size: image.size)
+        imageView.frame = CGRect(origin: CGPoint.zero, size: image.size)
         scrollView.delegate = self
         scrollView.addSubview(imageView)
         scrollView.contentSize = image.size
@@ -79,19 +79,19 @@ class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         
         //Add the label and buttons
         label.text = "Move and Scale"
-        label.textAlignment = .Center
-        label.textColor = UIColor.whiteColor()
-        label.font = label.font.fontWithSize(17)
+        label.textAlignment = .center
+        label.textColor = UIColor.white
+        label.font = label.font.withSize(17)
         
-        okButton.setTitle("OK", forState: .Normal)
-        okButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
-        okButton.titleLabel?.font = backButton.titleLabel?.font.fontWithSize(17)
-        okButton.addTarget(self, action: #selector(didTapOk), forControlEvents: .TouchUpInside)
+        okButton.setTitle("OK", for: UIControlState())
+        okButton.setTitleColor(UIColor.white, for: UIControlState())
+        okButton.titleLabel?.font = backButton.titleLabel?.font.withSize(17)
+        okButton.addTarget(self, action: #selector(didTapOk), for: .touchUpInside)
         
-        backButton.setTitle("<", forState: .Normal)
-        backButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
-        backButton.titleLabel?.font = backButton.titleLabel?.font.fontWithSize(30)
-        backButton.addTarget(self, action: #selector(didTapBack), forControlEvents: .TouchUpInside)
+        backButton.setTitle("<", for: UIControlState())
+        backButton.setTitleColor(UIColor.white, for: UIControlState())
+        backButton.titleLabel?.font = backButton.titleLabel?.font.withSize(30)
+        backButton.addTarget(self, action: #selector(didTapBack), for: .touchUpInside)
         
         setLabelAndButtonFrames()
         
@@ -119,10 +119,10 @@ class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
     }
     
     
-    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         
         
-        coordinator.animateAlongsideTransition({ (UIViewControllerTransitionCoordinatorContext) -> Void in
+        coordinator.animate(alongsideTransition: { (UIViewControllerTransitionCoordinatorContext) -> Void in
             
             self.setLabelAndButtonFrames()
             
@@ -133,12 +133,12 @@ class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
     }
     
     
-    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return imageView
     }
     
     
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
     
@@ -154,15 +154,15 @@ class KACircleCropViewController: UIViewController, UIScrollViewDelegate {
         let offset = scrollView.contentOffset
         
         UIGraphicsBeginImageContextWithOptions(CGSize(width: 240, height: 240), false, 0)
-        let circlePath = UIBezierPath(ovalInRect: CGRect(x: 0, y: 0, width: 240, height: 240))
+        let circlePath = UIBezierPath(ovalIn: CGRect(x: 0, y: 0, width: 240, height: 240))
         circlePath.addClip()
         var sharpRect = CGRect(x: -offset.x, y: -offset.y, width: newSize.width, height: newSize.height)
-        sharpRect = CGRectIntegral(sharpRect)
+        sharpRect = sharpRect.integral
         
-        image.drawInRect(sharpRect)
+        image.draw(in: sharpRect)
         let finalImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        if let imageData = UIImagePNGRepresentation(finalImage) {
+        if let imageData = UIImagePNGRepresentation(finalImage!) {
             if let pngImage = UIImage(data: imageData) {
                 delegate?.circleCropDidCropImage(pngImage)
             } else {

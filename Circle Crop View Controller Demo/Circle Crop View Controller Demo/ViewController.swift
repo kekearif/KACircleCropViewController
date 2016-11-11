@@ -18,14 +18,14 @@ class ViewController: UIViewController, KACircleCropViewControllerDelegate {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         if firstLoad {
             
             let circleCropController = KACircleCropViewController(withImage: UIImage(named: "cloud.jpg")!)
             circleCropController.delegate = self
-            presentViewController(circleCropController, animated: false, completion: nil)
+            present(circleCropController, animated: false, completion: nil)
             
             firstLoad = false
         }
@@ -42,13 +42,13 @@ class ViewController: UIViewController, KACircleCropViewControllerDelegate {
     
     func circleCropDidCancel() {
         //Basic dismiss
-        dismissViewControllerAnimated(false, completion: nil)
+        dismiss(animated: false, completion: nil)
     }
     
-    func circleCropDidCropImage(image: UIImage) {
+    func circleCropDidCropImage(_ image: UIImage) {
         //Same as dismiss but we also return the image
         imageView.image = image
-        dismissViewControllerAnimated(false, completion: nil)
+        dismiss(animated: false, completion: nil)
     }
 
 
