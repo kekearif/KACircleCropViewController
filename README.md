@@ -25,7 +25,7 @@ func circleCropDidCropImage(image: UIImage) {
 A demo project can be found in the repository.
 
 #Requirements
-Swift 2.2
+Swift 3
 
 #License
 KACircleCropViewController is licensed under the MIT License, please see the [LICENSE](LICENSE.md) file. Pull requests and contributions always welcome :smiley:
